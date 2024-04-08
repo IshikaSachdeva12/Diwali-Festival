@@ -1,0 +1,71 @@
+/*Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(festival.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*Header Styles*/
+h1{
+    color:rgba(215, 206, 17, 0.833);
+    text-align: center;
+    padding: 25px;
+    margin: 0;
+    font-style:italic;
+    text-shadow: 20px 20px 5px bisque ;
+}
+
+/*Main Section Styles*/
+main{
+    display:grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding: 1em;
+    margin-left: 20px;
+    
+}
+
+article{
+    background-color: rgb(243, 236, 163);
+    padding: 1em;
+    box-sizing:border-box;
+    border-radius: 15px;
+    border-style:double;
+}
+
+/*Footer Styles*/
+footer {
+    background-color: black;
+    color: azure;
+    text-align:center;
+    padding: 1em;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 200px;
+}
+
+/*Media query for small sized screen*/
+@media(max-width:500px ) {
+    main {
+       grid-template-columns: 1fr; 
+}
+}
+
+/*Media query for large sized screen*/
+@media(min-width: 501px) {
+    main {
+       grid-template-columns: auto auto;
+       grid-template-rows: auto auto;
+}
+}
+
+
+
